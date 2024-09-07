@@ -50,7 +50,7 @@
                         <a class="nav-link" href="#venues">Venue</a>
                     </li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="btn btn-primary" href="register.html">Register for Event</a>
+                        <a class="btn btn-primary" href="{{ url_for('registration') }}">Register for Event</a>
                     </li>
                 </ul>
             </div>
@@ -58,9 +58,11 @@
     </nav>
 
     <div class="content-wrapper">
+        
         <div class="content">
             <!-- Home Section -->
             <section id="home" class="section">
+
                 <div class="nitr-alumni-meet-container">
                     <div class="nitr-alumni-meet-header">
                         <h1 class="section-title">NIT ROURKELA GLOBAL ALUMNI MEET 2024</h1>
@@ -72,7 +74,8 @@
                             <img src="{{ url_for('static', filename='images/qr-code.png') }}" class="qr-code"
                                 alt="QR Code">
                         </div>
-                        <a href="register.html" class="nitr-alumni-meet-register-btn">Register for Event</a>
+                        <a href="{{ url_for('registration') }}" class="nitr-alumni-meet-register-btn">Register for
+                            Event</a>
                     </div>
                     <div class="nitr-alumni-meet-images">
                         <div class="nitr-alumni-meet-image">

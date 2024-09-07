@@ -20,12 +20,10 @@ def index():
     # Render the index.html template and pass the attendees list to it
     return render_template('index.html', attendees=attendees)
 
-
-# New registration route
+# Registration route
 @app.route('/registration')
 def registration():
     return render_template('registration.html')
-
 
 if __name__ == '__main__':
     app.run(debug=True)
